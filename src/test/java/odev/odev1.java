@@ -22,6 +22,8 @@ public class odev1 extends TestBaseBeforeClass {
         driver.get("https://www.amazon.com/");
        //3. Get all links
        List<WebElement> allLinks =  driver.findElements(By.tagName("a"));
+       System.out.println(allLinks);
+       System.out.println(allLinks.size());
        //4. Get number of links that has text
        List<WebElement> linkWithText = driver.findElements(By.xpath("//a[@class='nav_a']"));
        System.out.println(linkWithText.size());
