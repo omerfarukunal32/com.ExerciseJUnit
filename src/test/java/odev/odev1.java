@@ -1,6 +1,7 @@
 package odev;
 
 import Utisilies.TestBase;
+import Utisilies.TestBaseBeforeClass;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.net.Proxy;
 import java.util.List;
 
-public class odev1 extends TestBase {
+public class odev1 extends TestBaseBeforeClass {
 
    @Test
    public void test01(){
@@ -78,7 +79,7 @@ public class odev1 extends TestBase {
        select.selectByValue("1986");
        //5. Quit browser
        Thread.sleep(3000);
-       driver.quit();
+       //driver.quit();
    }
 
 }
